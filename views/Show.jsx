@@ -12,11 +12,14 @@ class Show extends React.Component {
                 <a class="navbar-brand" href="/user">Back</a>
                 </nav>
             <div>
-        <p>Recommendation: {recommendation}</p>
-        <p>Food: {food}</p>
-        <p>Hotel: {hotel}</p>
-        <p>Feedback: {feedback}</p>
-        <p>Rating: {rating}</p>
+<br/>
+            <ul class="list-group">
+  <li class="list-group-item">Recommendation: {recommendation}</li>
+  <li class="list-group-item">Food: {food}</li>
+  <li class="list-group-item">Hotel: {hotel}</li>
+  <li class="list-group-item">Feedback: {feedback}</li>
+  <li class="list-group-item">Rating: {rating}</li>
+            </ul>   
             </div>
             </div>
             </Default>
