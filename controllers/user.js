@@ -49,7 +49,6 @@ router.post('/', (req, res) => {
 router.get('/:id', (req, res) => {
     // Find the specific document
     User.findById(req.params.id, (error, founduser) => {
-        // render route and pass it the foundFruit
         res.render('Show', {
             User: founduser
         });
@@ -64,7 +63,7 @@ router.get('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
     // Delete document from collection
-    Fruit.findByIdAndRemove(req.params.id, (err, fruit) => {
+    User.findByIdAndRemove(req.params.id, (err, user) => {
         res.redirect('/user');
     });
 });
@@ -77,7 +76,6 @@ router.delete('/:id', (req, res) => {
 router.get('/:id/edit', (req, res) => {
     // Find our document from the collection - using mongoose model
     User.findById(req.params.id, (err, founduser) => {
-        // render the edit view and pass it the found fruit
         res.render('Edit', {
             user: founduser
         })
