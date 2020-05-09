@@ -16,6 +16,7 @@ class New extends React.Component {
                   <br/>
                   <br/>
                             Favorite Food: <input type="text" name="food"/> <br/>
+                <br/>
                             Hotel/Hostel: <input type="text" name="hotel"/> Visit Rating: <input type="text" name="rating" />
                   <br/>
                   <br/>

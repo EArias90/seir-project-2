@@ -7,12 +7,11 @@ class Show extends React.Component {
         return(
             <Default>
             <div>
-            <h1 class="text-center"> Entries </h1>
+        <h1 class="text-center"> {countryLocation} Entry </h1>
             <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand" href="/user">Back</a>
                 </nav>
             <div>
-        <p>Location: {countryLocation} </p>
         <p>Recommendation: {recommendation}</p>
         <p>Food: {food}</p>
         <p>Hotel: {hotel}</p>

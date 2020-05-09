@@ -8,9 +8,11 @@ class Index extends React.Component {
             <Default>
             <div>
                 <h1 class="text-center">Welcome Back!</h1>
-                <nav class="navbar navbar-light bg-light">
+                <nav class="navbar navbar-dark bg-dark">
                 <a class="navbar-brand" href="/user/new">Create a New Entry</a>
                 </nav>
+                <br/>
+                
             
                 <ul>
                     {
