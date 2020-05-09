@@ -1,6 +1,6 @@
 ## Travel Journal
 
-## Github page - https://earias90.github.io/
+## heroku - https://mae-project-journal.herokuapp.com/user 
 
 ## About the app: 
 

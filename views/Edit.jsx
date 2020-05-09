@@ -8,7 +8,7 @@ class Edit extends React.Component {
         return (
             <Default>
             <div>
-                <h1>Edit Page</h1>
+                <h1 class="text-center">Edit Page</h1>
                 <form action={`/fruits/${_id}?_method=PUT`} method="POST">
                     Country Visted: <input type="text" name="name" defaultValue={location}/> <br/>
                     Recommended Area: <input type="text" name="visit" defaultValue={recommendation}/> <br/>
