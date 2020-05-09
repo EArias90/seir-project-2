@@ -8,7 +8,7 @@ const userSchema = new Schema({
     food: {type: String, required: false},
     hotel: {type: String, required: false},
     feedback: {type: String, required: false},
-    rating: {type: Number, max: 5}
+    rating: {type: Number, required: true, max: 5}
 
 }, { timestamps: true });
 

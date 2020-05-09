@@ -3,7 +3,7 @@ const Default = require('./Default');
 
 class Show extends React.Component {
     render() {
-        const {location,recommendation,rating,food, hotel, feedback} = this.props;
+        const {countryLocation,recommendation,rating,food, hotel, feedback} = this.props.user;
         return(
             <Default>
             <div>
@@ -12,7 +12,7 @@ class Show extends React.Component {
                 <a class="navbar-brand" href="/user">Back</a>
                 </nav>
             <div>
-        <p>Location: {location}</p>
+        <p>Location: {countryLocation} </p>
         <p>Recommendation: {recommendation}</p>
         <p>Food: {food}</p>
         <p>Hotel: {hotel}</p>

@@ -50,7 +50,7 @@ router.get('/:id', (req, res) => {
     // Find the specific document
     User.findById(req.params.id, (error, founduser) => {
         res.render('Show', {
-            User: founduser
+            user: founduser
         });
     });
 });
