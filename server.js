@@ -2,9 +2,9 @@
 //Dependencies
 //___________________
 const express = require('express');
+const app = express();
 const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
-const app = express ();
 
 //___________________
 //Port
@@ -39,14 +39,18 @@ app.use(express.urlencoded({ extended: false }));// extended: false - does not a
 app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
+app.set('view engine', 'jsx');
+app.engine('jsx', require('express-react-views').createEngine());
+
 
 //___________________
-// Routes
+// Controller
 //___________________
-//localhost:3000 
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
-});
+
+const userController = require('./controllers/user.js');
+app.use('/user',userController);
+
+
 
 //___________________
 //Listener
