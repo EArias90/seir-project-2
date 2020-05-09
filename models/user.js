@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const userSchema = new Schema({
-    location: { type: String, required: true },
+    countryLocation: { type: String, required: true },
     recommendation: {type: String, required: true},
     food: {type: String, required: false},
     hotel: {type: String, required: false},

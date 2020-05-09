@@ -18,12 +18,12 @@ class Index extends React.Component {
                             return (
                                 <ul class="list-group">
                                 <li class="list-group-item">
-                                    View Entries <a href={`/show`}>here</a> 
-
+                                    View Visit <a href={`/user/show`}>here</a> 
+                            <h1>{user.countryLocation}</h1>
                                     {/* Deletes the selected data */}
 
                                     <form action={`/user/${user._id}?_method=DELETE`} method="POST">
-                                        <input type="submit" value="delete"/>
+                                        <input type="submit" value="Delete"/>
                                     </form>
 
                                     {/* link to the edit route*/}
